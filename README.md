@@ -10,7 +10,6 @@ We propose a new linear layer based on Butterfly Matrices for flow-based models.
 ![schematic](assets/butterflyflow.jpg)
 
 
---------------------
 ## Requirements
 
 ButterflyFlow is built with Python 3.7, PyTorch 1.10 and CUDA 10.2. And additional packages can be installed with
