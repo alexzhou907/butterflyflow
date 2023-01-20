@@ -1,0 +1,30 @@
+{
+  "flow": {
+    "type": "butter_glow",
+    "levels": 2,
+    "num_blocks": 2,
+    "use_intermediate_perm": true,
+    "reverse_perm": true,
+    "perm_layers": 10,
+    "bi_direction": false
+  },
+  "ngpu": 1,
+  "use_ema": false,
+  "ema_sep": true,
+  "ema": {
+    "ema_rate": 0.999,
+    "type": "perm"
+  },
+  "perm_init_type": "rot",
+  "use_perm": true,
+  "lr": 0.0001,
+  "perm_lr_mult": 1,
+  "perm_scheduler": {
+    "type": "exp",
+    "gamma": 0.999
+  },
+  "use_scheduler": true,
+  "dataset": "mimic",
+  "patient": "3000393",
+  "data_path": "./data/mimic_filtered/"
+}

@@ -1,0 +1,34 @@
+{
+  "flow": {
+    "type": "butter_glow",
+    "levels": 2,
+    "num_steps": [8,8],
+    "in_channels": 3,
+    "inverse": true,
+    "use_conv1by1": true,
+    "use_intermediate_perm": true,
+    "reverse_perm": true,
+    "perm_layers": 2
+  },
+
+  "ngpu": 8,
+
+  "use_ema": true,
+  "ema_sep": true,
+  "ema": {
+    "ema_rate": 0.999,
+    "type": "perm"
+  },
+  "use_perm": true,
+  "perm_type": 4,
+  "perm_init_type": "iden",
+  "lr":0.001,
+  "perm_lr_mult": 1,
+  "perm_scheduler": {
+    "type": "exp",
+    "gamma": 0.996
+  },
+
+  "dataset": "galaxy",
+  "data_path": "./data/galaxy"
+}

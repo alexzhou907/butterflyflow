@@ -1,0 +1,35 @@
+{
+  "flow": {
+    "type": "butter_glow",
+    "levels": 3,
+    "num_steps": [
+      32,
+      32,
+      32
+    ],
+    "in_channels": 3,
+    "inverse": true,
+    "use_conv1by1": true,
+    "use_intermediate_perm": true,
+    "reverse_perm": true,
+    "perm_layers": 1
+  },
+  "ngpu": 2,
+  "use_ema": false,
+  "ema_sep": true,
+  "ema": {
+    "ema_rate": 0.999,
+    "type": "perm"
+  },
+  "use_perm": true,
+  "perm_type": 4,
+  "perm_init_type": "iden",
+  "lr": 0.001,
+  "perm_lr_mult": 1,
+  "perm_scheduler": {
+    "type": "exp",
+    "gamma": 0.999
+  },
+  "dataset": "cifar10",
+  "data_path": "./data/cifar10"
+}
