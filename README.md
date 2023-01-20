@@ -18,7 +18,6 @@ ButterflyFlow is built with Python 3.7, PyTorch 1.10 and CUDA 10.2. And addition
 pip install -r requirements.txt
 ```
 
-
 ## Data
 
 In this repo, we present CIFAR10, [Galaxy Images](https://github.com/SpaceML/merger_transfer_learning), and [MIMIC-III Waveform Database](https://physionet.org/content/mimic3wdb/1.0/).
